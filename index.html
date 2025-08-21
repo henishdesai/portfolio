@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .hero {
+      background: #d6b6b6;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .skill-box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      background-color: rgb(147, 145, 144);
+    }
+
+    .skill-box:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+     .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      gap: 2rem;
+    }
+
+    .about-image {
+      flex: 1 1 300px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+      filter: grayscale(100%);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .about-image img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.02);
+    }
+
+    .about-content {
+      flex: 2;
+    }
+
+    .about-content h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+     header {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skill">skill</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-light text-dark py-5" style="animation: fadeIn 2s ease-in-out;">
+        <div class="container text-center">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                    <img
+                        src="image/henish1.jpg" height="500" width="400"
+                        style="animation: bounce 2s ;"
+                        alt="Hero Image"
+                        class="img-fluid rounded jay mt-5"
+                    />
+                </div>
+                <div class="col-md-6">
+                    <h1 style="animation: slideInLeft 1.5s ease-in-out;">I am Henish Desai</h1>
+                    <h2 style="animation: slideInLeft 1.5s ease-in-out; animation-delay: 0.5s;">Welcome to My Portfolio</h2>
+                    <p class="lead" style="animation: fadeInUp 2s ease-in-out; animation-delay: 1s;">
+                        Explore my projects, skills, and get in touch to collaborate!
+                    </p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+   <header id="about">
+    <h2>About Me</h2>
+    <p>Python Full Stack Developer | Backend + Frontend | Passionate Coder</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-image">
+      <img src="image/else2.jpg" alt="Your Photo">
+    </div>
+    <div class="about-content">
+      <!-- <h3>Hi, I'm [Desai Henish]</h3> -->
+      <p>
+        I'm a Python Full Stack Developer with expertise in both backend (Django, Flask) and frontend (React, HTML5, CSS3, JavaScript). I build secure, scalable, and user-friendly web applications.
+      </p>
+      <p>
+        With a strong foundation in software architecture and API development, I love solving complex technical problems and turning ideas into real-world digital solutions.
+      </p>
+      <p>
+        I'm constantly learning and improving—whether it's new Python libraries, modern frontend trends, or DevOps practices.
+      </p>
+      <p>
+        When I’m not coding, you’ll find me exploring open-source projects or writing technical blogs.
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- Skills Section -->
+  <skills id="skill" class="py-5 bg-light ">
+    <div class="container">
+      <h2 class="text-center mb-4">My Skills</h2>
+      <div class="row text-center mb-5">
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>Python</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>SDLC</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>Figma</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>HTML5</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>CSS</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>Bootstrap 5</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>jQuery</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>JavaScript</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>Web Design</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>Python Basic</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>opp</h5>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="skill-box">
+            <h5>Teamwork</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </skills>
+
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="kavy text-center mb-4 animate__animated animate__fadeIn">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 animate__animated animate__zoomIn">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3    
+ </script>
+ 
